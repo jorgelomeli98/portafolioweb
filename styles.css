@@ -572,9 +572,7 @@ footer p {
         overflow-x: auto; 
         max-width: 100%; 
         box-sizing: border-box; 
-        padding: 10px; 
-        background-color: #f5f5f5; 
-        border: 1px solid #ccc; 
+        padding: 10px;  
         border-radius: 5px; 
     }
     .proyectos-container {

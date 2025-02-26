@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const codeArea = document.getElementById("code");
 
-    window.loadCode = function (index) { // <-- Hacemos la función accesible globalmente
+    window.loadCode = function (index) {
         if (codes[index] !== undefined) {
             codeArea.value = codes[index];
         }
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     
         if (!outputElement) {
-            console.error("❌ ERROR: No se encontró el elemento con id='outputweb'");
+            console.error("ERROR: No se encontró el elemento con id='outputweb'");
             return;
         }
     
