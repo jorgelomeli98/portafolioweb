@@ -192,7 +192,7 @@ h2 {
 .lenguaje-card, .tecnologia-card {
     padding: 20px;
     border-radius: 10px;
-    width: 150px;
+    width: 250px;
     text-align: center;
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     color: white;
@@ -542,7 +542,8 @@ footer p {
     }
 
     .lenguaje-card, .tecnologia-card {
-        width: 50%; 
+        width: 70%;
+        height: 50%; 
     }
 
     
@@ -556,8 +557,14 @@ footer p {
     }
 
     textarea#code {
-        height: 200px; 
+        width: 100%;
+        max-width: 100%;
+        height: 200px;
+        overflow: auto; 
+        word-wrap: break-word; 
+        white-space: pre-wrap;
     }
+    
 
     #run-btn {
         width: 100%;
@@ -571,6 +578,7 @@ footer p {
     }
 
     .proyecto-card {
-        width: 50%;
+        width: 70%;
+        height: 50%;
     }
 }
