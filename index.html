@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- python -m http.server 8000 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Jorge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Cargar FontAwesome para los íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="icons/jorge.jpg" alt="Foto de Jorge" class="foto-perfil" id="fotoPerfil">
+            <div class="titulo-container">
+                <h1>Jorge Luis Lomelí García</h1>
+                <p>Desarrollador Backend</p>
+            </div>
+        </div>
+
+        <div class="contact-icons">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/3333929188" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                <span>+52 333 392 9188</span>
+            </a>
+            <!-- Correo -->
+            <a href="mailto:jorgelomelig98@gmail.com" title="Correo">
+                <i class="fas fa-envelope"></i>
+                <span>jorgelomelig98@gmail.com</span>
+            </a>
+            <!-- Google Maps -->
+            <a href="https://www.google.com/maps?q=Guadalajara,+México" target="_blank" title="Ubicación">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Guadalajara, México</span>
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#lenguajes">Lenguajes</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#consola">Logica</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>¡Hola! Soy Jorge Luis Lomelí García, un apasionado desarrollador backend con experiencia en diversas tecnologías como Python, Java, Kotlin y muchos más.</p>
+        <p>Mi enfoque está en crear soluciones eficientes, escalables y fáciles de mantener. Además de la programación, tengo formación en psicología, lo que me permite tener una perspectiva única en la resolución de problemas y en la interacción con los usuarios.</p>
+        <p>Siempre busco aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer como profesional. Si tienes algún proyecto en mente, ¡no dudes en contactarme!</p>
+    </section>
+
+    <section id="lenguajes">
+        <h2>Lenguajes de Programación</h2>
+        <div class="lenguajes-container">
+            <div class="lenguaje-card python">
+                <img src="icons/python.svg" alt="Python">
+                <h3>Python</h3>
+                <p>Avanzado</p>
+                <div class="progress-bar">
+                    <div class="progress python-progress"></div>
+                </div>
+            </div>
+            
+            <div class="lenguaje-card javascript">
+                <img src="icons/javascript.svg" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Medio</p>
+                <div class="progress-bar">
+                    <div class="progress javascript-progress"></div>
+                </div>
+            </div>
+            
+            <div class="lenguaje-card java">
+                <img src="icons/java.svg" alt="Java">
+                <h3>Java</h3>
+                <p>Medio</p>
+                <div class="progress-bar">
+                    <div class="progress java-progress"></div>
+                </div>
+            </div>
+            
+            <div class="lenguaje-card kotlin">
+                <img src="icons/kotlin.svg" alt="Kotlin">
+                <h3>Kotlin</h3>
+                <p>Medio</p>
+                <div class="progress-bar">
+                    <div class="progress kotlin-progress"></div>
+                </div>
+            </div>
+            
+            <div class="lenguaje-card csharp">
+                <img src="icons/csharp.svg" alt="C#">
+                <h3>C#</h3>
+                <p>Básico</p>
+                <div class="progress-bar">
+                    <div class="progress csharp-progress"></div>
+                </div>
+            </div>            
+        </div>
+    </section>    
+
+    <!-- Sección de Tecnologías -->
+    <section id="tecnologias">
+        <h2>Tecnologías</h2>
+        <div class="tecnologias-container">
+            <div class="tecnologia-card fastapi">
+                <img src="icons/fastapi.svg" alt="FastAPI">
+                <h3>FastAPI</h3>
+            </div>
+
+            <div class="tecnologia-card mysql">
+                <img src="icons/mysql.svg" alt="MySQL">
+                <h3>MySQL</h3>
+            </div>
+
+            <div class="tecnologia-card mongodb">
+                <img src="icons/mongodb.svg" alt="MongoDB">
+                <h3>MongoDB</h3>
+            </div>
+            
+            <div class="tecnologia-card googleappscript">
+                <img src="icons/GoogleAppsScript.svg" alt="Google App Script">
+                <h3>Google App Script</h3>
+            </div>
+
+            <div class="tecnologia-card androidstudio">
+                <img src="icons/androidstudio.svg" alt="Android Studio">
+                <h3>Android Studio</h3>
+            </div>
+
+            <div class="tecnologia-card git">
+                <img src="icons/git.svg" alt="Git">
+                <h3>Git</h3>
+            </div>
+
+            <div class="tecnologia-card linux">
+                <img src="icons/linux.svg" alt="Linux">
+                <h3>Linux</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="proyectos-container">
+            <a href="https://github.com/tu-usuario" class="proyecto-card" target="_blank">
+                <h3>GitHub</h3>
+                <p>Visita mi perfil de GitHub para ver todos mis proyectos.</p>
+            </a>
+            <a href="https://tusitio.com" class="proyecto-card" target="_blank">
+                <h3>Mi Sitio Web</h3>
+                <p>Echa un vistazo a mi sitio web personal.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="consola">
+        <div class="console-container">
+            <aside id="sidebar">
+                <h3>Ejercicios</h3>
+                <button onclick="loadCode(0)">Arbol de navidad</button>
+                <button onclick="loadCode(1)">Hola mundo</button>
+                <button onclick="loadCode(2)">Calculadora de Calorias</button>
+                <button onclick="loadCode(3)">CRUD Basico</button>
+                <button onclick="loadCode(4)">Autentificación Basica</button>
+                <button onclick="loadCode(5)">El problema de los numeros duplicados</button>
+            </aside>
+
+            <div id="console-main">
+                <h2>Editor de codigo Python</h2>
+                <textarea id="code" rows="10" cols="50"></textarea>
+                <button id="run-btn" onclick="runPython()">Ejecutar</button>
+                <pre id="outputweb"></pre>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contacto-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
+    
+
+    <footer>
+        <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img src="icons/jorge.jpg" alt="Foto de Jorge" class="modal-content" id="img01">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.24.0/full/pyodide.js"></script>
+    <script type="module" src="codes.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

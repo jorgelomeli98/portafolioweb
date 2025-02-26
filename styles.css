@@ -1,0 +1,474 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten */
+}
+
+/* Contenedor del contenido principal (foto + título) */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid #fff;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.titulo-container h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.titulo-container p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    color: #1abc9c;
+}
+
+/* Estilos para los íconos de contacto */
+.contact-icons {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-icons a {
+    color: white;
+    font-size: 25px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-icons a:hover {
+    color: #1abc9c;
+}
+
+.contact-icons a i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.contact-icons a span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Modal (Vista Ampliada de la Foto) */
+.modal {
+    display: none; /* Ocultamos el modal por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Navegación (movida al body y centrada) */
+nav {
+    display: flex;
+    justify-content: center; /* Centra los enlaces */
+    padding: 20px 0;
+    background-color: #333333c5; /* Fondo para que se distinga */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+
+/* Secciones */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Títulos */
+h2 {
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Sobre mí */
+#sobre-mi {
+    text-align: center; /* Centra el texto */
+    padding: 40px 20px; /* Añade un poco de espacio alrededor del contenido */
+}
+
+#sobre-mi h2 {
+    font-size: 2.5rem; /* Aumenta el tamaño del encabezado */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+#sobre-mi p {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto del párrafo */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    max-width: 800px; /* Limita el ancho del texto para que no se vea demasiado largo en pantallas grandes */
+    margin: 0 auto; /* Centra el párrafo */
+}
+
+
+/* Sección de Lenguajes */
+.lenguajes-container, .tecnologias-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.lenguaje-card, .tecnologia-card {
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Colores personalizados para cada lenguaje y tecnología */
+.python { background: #5f86a7; }      /* Azul Python */
+.javascript { background: #dfd79f; color: black; }  /* Amarillo JS */
+.java { background: #bdd0d6; color: black;}       /* Azul Java */
+.kotlin { background: #b7a4eb; }     /* Púrpura Kotlin */
+.csharp { background: #b992b7; }     /* Púrpura C# */
+.fastapi { background: #25362acb; }    /* Verde FastAPI */
+.mysql { background: #f1dda3d7; }
+.mongodb { background: #ffffffc5; color: black; }
+.googleappscript { background: #ffffffc5; color: black; }
+.androidstudio { background: #2f505a; }
+.git { background: #ffffffc5; color: black; }
+.linux { background: #ffffffc5; color: black; }
+
+/* Efecto hover */
+.lenguaje-card:hover, .tecnologia-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de la barra de progreso */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progress {
+    width: 0%; /* Inicia vacía */
+    height: 100%;
+    transition: width 1s ease-in-out;
+}
+
+/* Colores de las barras de progreso */
+.python-progress { background: #1679ca; }
+.javascript-progress { background: #a38b02; }
+.java-progress { background: #015579; }
+.kotlin-progress { background: #9D74FF; }
+.csharp-progress { background: #B366B7; }
+
+/* Hover: activa la animación de la barra de progreso */
+.python:hover .progress { width: 100%; }
+.javascript:hover .progress { width: 70%; }
+.java:hover .progress { width: 70%; }
+.kotlin:hover .progress { width: 70%; }
+.csharp:hover .progress { width: 40%; }
+
+/* Animaciones de borde con color personalizado */
+.python:hover { border-color: #4B8BBE; animation: glow-python 1s infinite alternate; }
+.javascript:hover { border-color: #FFD700; animation: glow-javascript 1s infinite alternate; }
+.java:hover { border-color: #0096D6; animation: glow-java 1s infinite alternate; }
+.kotlin:hover { border-color: #9D74FF; animation: glow-kotlin 1s infinite alternate; }
+.csharp:hover { border-color: #B366B7; animation: glow-csharp 1s infinite alternate; }
+.fastapi:hover { border-color: #00B8A9; animation: glow-fastapi 1s infinite alternate; }
+.mysql:hover { border-color: #dad04a; animation: glow-fastapi 1s infinite alternate; }
+.mongodb:hover { border-color: #dad04a; animation: glow-fastapi 1s infinite alternate; }
+.googleappscript:hover { border-color: #dad04a; animation: glow-fastapi 1s infinite alternate; }
+.androidstudio:hover { border-color: #dad04a; animation: glow-fastapi 1s infinite alternate; }
+.git:hover { border-color: #dad04a; animation: glow-fastapi 1s infinite alternate; }
+.linux:hover { border-color: #dad04a; animation: glow-fastapi 1s infinite alternate; }
+
+/* Animaciones */
+@keyframes glow-fastapi {
+    0% { box-shadow: 0 0 5px #82ddab; border-color: #00b847; }
+    100% { box-shadow: 0 0 20px #82ddab; border-color: #82ddab; }
+}
+
+@keyframes glow-python {
+    0% { box-shadow: 0 0 5px #4B8BBE; border-color: #4B8BBE; }
+    100% { box-shadow: 0 0 20px #4B8BBE; border-color: #4B8BBE; }
+}
+
+@keyframes glow-javascript {
+    0% { box-shadow: 0 0 5px #FFD700; border-color: #FFD700; }
+    100% { box-shadow: 0 0 20px #FFD700; border-color: #FFD700; }
+}
+
+@keyframes glow-java {
+    0% { box-shadow: 0 0 5px #0096D6; border-color: #0096D6; }
+    100% { box-shadow: 0 0 20px #0096D6; border-color: #0096D6; }
+}
+
+@keyframes glow-kotlin {
+    0% { box-shadow: 0 0 5px #9D74FF; border-color: #9D74FF; }
+    100% { box-shadow: 0 0 20px #9D74FF; border-color: #9D74FF; }
+}
+
+@keyframes glow-csharp {
+    0% { box-shadow: 0 0 5px #B366B7; border-color: #B366B7; }
+    100% { box-shadow: 0 0 20px #B366B7; border-color: #B366B7; }
+}
+/* seccion de consola*/
+#consola {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #37363ada;
+    border-radius: 5px;
+    background: #1f2d3fcc;
+}
+
+/* Estilo para la consola */
+.console-container {
+    display: flex;
+    background-color: #1e1e1e; /* Fondo oscuro tipo VS Code */
+    color: #ffffff; /* Texto claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Barra lateral de códigos */
+#sidebar {
+    background-color: #252526; /* Fondo más oscuro */
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#sidebar button {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#sidebar button:hover {
+    background-color: #575757;
+}
+
+/* Área principal de la consola */
+#console-main {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+/* Editor de código */
+textarea#code {
+    width: 100%;
+    height: 400px;
+    background-color: #282c34; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+}
+
+/* Botón de ejecución */
+#run-btn {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 20px; /* Espacio entre la consola y el botón */
+    display: center; /* Asegura que ocupe toda la línea */
+}
+
+#run-btn:hover {
+    background-color: #005f99;
+}
+
+/* Salida de la consola */
+pre#outputweb {
+    background-color: #000000; /* Fondo negro */
+    color: #33ff33; /* Verde estilo terminal */
+    padding: 10px;
+    min-height: 50px;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    border: 1px solid #3a3a3a;
+}
+
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+}
+
+/* Sección de Proyectos */
+.proyectos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.proyecto-card {
+    width: 300px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.proyecto-card:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.proyecto-card h3 {
+    font-size: 1.5rem;
+}
+
+/* Formulario de Contacto */
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
