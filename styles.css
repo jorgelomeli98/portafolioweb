@@ -542,7 +542,7 @@ footer p {
 
     .lenguaje-card, .tecnologia-card {
         width: 90%;
-        height: 50%; 
+        height: 30%; 
     }
 
     
@@ -582,6 +582,6 @@ footer p {
 
     .proyecto-card {
         width: 90%;
-        height: 50%;
+        height: 30%;
     }
 }
