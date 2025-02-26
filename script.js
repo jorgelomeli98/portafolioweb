@@ -1,24 +1,7 @@
 console.log("Script cargado");
 import { codes } from "./codes.js";
 
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contacto-form");
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-        
-        const nombre = document.getElementById("nombre").value;
-        const email = document.getElementById("email").value;
-        const mensaje = document.getElementById("mensaje").value;
-
-        if (nombre && email && mensaje) {
-            alert(`¡Gracias, ${nombre}! Tu mensaje ha sido enviado.`);
-            form.reset();
-        } else {
-            alert("Por favor, completa todos los campos.");
-        }
-    });
-});
 
 document.addEventListener("DOMContentLoaded", function () {
     const codeArea = document.getElementById("code");
