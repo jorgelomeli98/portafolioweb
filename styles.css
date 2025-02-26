@@ -542,7 +542,7 @@ footer p {
     }
 
     .lenguaje-card, .tecnologia-card {
-        width: 70%;
+        width: 90%;
         height: 50%; 
     }
 
@@ -557,14 +557,8 @@ footer p {
     }
 
     textarea#code {
-        width: 100%;
-        max-width: 100%;
-        height: 200px;
-        overflow: auto; 
-        word-wrap: break-word; 
-        white-space: pre-wrap;
+        height: 200px; 
     }
-    
 
     #run-btn {
         width: 100%;
@@ -578,7 +572,7 @@ footer p {
     }
 
     .proyecto-card {
-        width: 70%;
+        width: 90%;
         height: 50%;
     }
 }
