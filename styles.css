@@ -11,6 +11,7 @@ body {
 header {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     padding: 20px 30px;
     background: rgba(0, 0, 0, 0.7);
@@ -36,6 +37,10 @@ header {
     cursor: pointer;
 }
 
+.titulo-container {
+    text-align: center; /* Asegura que el contenido dentro del contenedor esté centrado */
+}
+
 .titulo-container h1 {
     margin: 0;
     font-size: 2rem;
@@ -46,15 +51,18 @@ header {
     margin: 5px 0 0;
     font-size: 1.2rem;
     color: #1abc9c;
+    text-align: center;
 }
 
 /* Estilos para los íconos de contacto */
 .contact-icons {
-    position: absolute;
+    position: center;
     top: 20px;
     right: 30px;
     display: flex;
     gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     align-items: center;
 }
 
@@ -189,7 +197,7 @@ h2 {
 .lenguaje-card, .tecnologia-card {
     padding: 20px;
     border-radius: 10px;
-    width: 280px;
+    width: 200px;
     text-align: center;
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     color: white;
@@ -402,6 +410,8 @@ footer {
 /* Sección de Proyectos */
 .proyectos-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
