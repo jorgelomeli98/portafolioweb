@@ -15,7 +15,7 @@ header {
     padding: 20px 30px;
     background: rgba(0, 0, 0, 0.7);
     position: relative;
-    flex-wrap: wrap; /* Asegura que los elementos se ajusten */
+    flex-wrap: wrap; 
 }
 
 /* Contenedor del contenido principal (foto + título) */
@@ -75,7 +75,7 @@ header {
 }
 
 .contact-icons a i {
-    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    margin-right: 10px; 
 }
 
 .contact-icons a span {
@@ -83,16 +83,16 @@ header {
     font-weight: 300;
 }
 
-/* Modal (Vista Ampliada de la Foto) */
+/* Modal */
 .modal {
-    display: none; /* Ocultamos el modal por defecto */
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.8); 
     justify-content: center;
     align-items: center;
 }
@@ -114,12 +114,12 @@ header {
     cursor: pointer;
 }
 
-/* Navegación (movida al body y centrada) */
+/* Navegación */
 nav {
     display: flex;
-    justify-content: center; /* Centra los enlaces */
+    justify-content: center;
     padding: 20px 0;
-    background-color: #333333c5; /* Fondo para que se distinga */
+    background-color: #333333c5; 
 }
 
 nav ul {
@@ -163,20 +163,20 @@ h2 {
 
 /* Sobre mí */
 #sobre-mi {
-    text-align: center; /* Centra el texto */
-    padding: 40px 20px; /* Añade un poco de espacio alrededor del contenido */
+    text-align: center; 
+    padding: 40px 20px; 
 }
 
 #sobre-mi h2 {
-    font-size: 2.5rem; /* Aumenta el tamaño del encabezado */
-    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
 }
 
 #sobre-mi p {
-    font-size: 1.2rem; /* Aumenta el tamaño del texto del párrafo */
-    line-height: 1.6; /* Mejora la legibilidad del texto */
-    max-width: 800px; /* Limita el ancho del texto para que no se vea demasiado largo en pantallas grandes */
-    margin: 0 auto; /* Centra el párrafo */
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
 
@@ -200,13 +200,13 @@ h2 {
     overflow: hidden;
 }
 
-/* Colores personalizados para cada lenguaje y tecnología */
-.python { background: #5f86a7; }      /* Azul Python */
-.javascript { background: #dfd79f; color: black; }  /* Amarillo JS */
-.java { background: #bdd0d6; color: black;}       /* Azul Java */
-.kotlin { background: #b7a4eb; }     /* Púrpura Kotlin */
-.csharp { background: #b992b7; }     /* Púrpura C# */
-.fastapi { background: #25362acb; }    /* Verde FastAPI */
+/* Colores tarjetas lenguahes y tecnologias*/
+.python { background: #5f86a7; }      
+.javascript { background: #dfd79f; color: black; }  
+.java { background: #bdd0d6; color: black;}      
+.kotlin { background: #b7a4eb; }    
+.csharp { background: #b992b7; }    
+.fastapi { background: #25362acb; }    
 .mysql { background: #f1dda3d7; }
 .mongodb { background: #ffffffc5; color: black; }
 .googleappscript { background: #ffffffc5; color: black; }
@@ -232,7 +232,7 @@ h2 {
 }
 
 .progress {
-    width: 0%; /* Inicia vacía */
+    width: 0%; 
     height: 100%;
     transition: width 1s ease-in-out;
 }
@@ -244,14 +244,14 @@ h2 {
 .kotlin-progress { background: #9D74FF; }
 .csharp-progress { background: #B366B7; }
 
-/* Hover: activa la animación de la barra de progreso */
+/* Hover: barra de progreso */
 .python:hover .progress { width: 100%; }
 .javascript:hover .progress { width: 70%; }
 .java:hover .progress { width: 70%; }
 .kotlin:hover .progress { width: 70%; }
 .csharp:hover .progress { width: 40%; }
 
-/* Animaciones de borde con color personalizado */
+/* Animaciones de borde*/
 .python:hover { border-color: #4B8BBE; animation: glow-python 1s infinite alternate; }
 .javascript:hover { border-color: #FFD700; animation: glow-javascript 1s infinite alternate; }
 .java:hover { border-color: #0096D6; animation: glow-java 1s infinite alternate; }
@@ -307,8 +307,8 @@ h2 {
 /* Estilo para la consola */
 .console-container {
     display: flex;
-    background-color: #1e1e1e; /* Fondo oscuro tipo VS Code */
-    color: #ffffff; /* Texto claro */
+    background-color: #1e1e1e; 
+    color: #ffffff; 
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
@@ -316,7 +316,7 @@ h2 {
 
 /* Barra lateral de códigos */
 #sidebar {
-    background-color: #252526; /* Fondo más oscuro */
+    background-color: #252526;
     padding: 15px;
     border-radius: 10px;
     width: 200px;
@@ -354,8 +354,9 @@ h2 {
 textarea#code {
     width: 100%;
     height: 300px;
-    background-color: #282c34; /* Fondo oscuro */
-    color: #ffffff; /* Texto blanco */
+    display: flex;
+    background-color: #282c34; 
+    color: #ffffff; 
     font-family: "Courier New", monospace;
     font-size: 14px;
     padding: 5px;
@@ -372,8 +373,8 @@ textarea#code {
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
-    margin-top: 20px; /* Espacio entre la consola y el botón */
-    display: center; /* Asegura que ocupe toda la línea */
+    margin-top: 20px;
+    display: center;
 }
 
 #run-btn:hover {
@@ -382,8 +383,9 @@ textarea#code {
 
 /* Salida de la consola */
 pre#outputweb {
-    background-color: #000000; /* Fondo negro */
-    color: #33ff33; /* Verde estilo terminal */
+    background-color: #000000;
+    color: #33ff33;
+    display: flex;
     padding: 10px;
     min-height: 50px;
     border-radius: 5px;
@@ -483,21 +485,21 @@ footer p {
 
 /* Estilos para móviles */
 @media screen and (max-width: 768px) {
-    /* Ajustar el encabezado */
+    
     header {
         flex-direction: column;
         padding: 15px;
         text-align: center;
     }
 
-    /* Ajustar la imagen de perfil */
+    
     .foto-perfil {
         width: 80px;
         height: 80px;
         margin: 10px 0;
     }
 
-    /* Asegurar que el título y subtítulo estén centrados */
+    
     .titulo-container h1 {
         font-size: 1.5rem;
     }
@@ -506,7 +508,7 @@ footer p {
         font-size: 1rem;
     }
 
-    /* Ajustar los íconos de contacto */
+    
     .contact-icons {
         flex-direction: column;
         gap: 10px;
@@ -517,7 +519,7 @@ footer p {
         font-size: 20px;
     }
 
-    /* Hacer la navegación vertical en móviles */
+    
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -528,22 +530,22 @@ footer p {
         margin: 10px 0;
     }
 
-    /* Secciones con menos padding */
+    
     section {
         padding: 30px 15px;
     }
 
-    /* Ajustar tarjetas de lenguajes y tecnologías */
+    
     .lenguajes-container, .tecnologias-container {
         flex-direction: column;
         align-items: center;
     }
 
     .lenguaje-card, .tecnologia-card {
-        width: 90%; /* Ajustar el ancho */
+        width: 90%; 
     }
 
-    /* Ajustar la consola */
+    
     .console-container {
         flex-direction: column;
         align-items: center;
@@ -554,7 +556,7 @@ footer p {
     }
 
     textarea#code {
-        height: 200px; /* Reducir tamaño del editor */
+        height: 200px; 
     }
 
     #run-btn {
@@ -562,7 +564,7 @@ footer p {
         text-align: center;
     }
 
-    /* Ajustar proyectos */
+    
     .proyectos-container {
         flex-direction: column;
         align-items: center;
