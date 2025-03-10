@@ -192,13 +192,14 @@ h2 {
 .lenguaje-card, .tecnologia-card {
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
+    width: 100px;
     text-align: center;
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     color: white;
     position: relative;
     overflow: hidden;
 }
+
 
 /* Colores tarjetas lenguahes y tecnologias*/
 .python { background: #5f86a7; }      
@@ -421,6 +422,15 @@ footer {
     text-align: center;
     text-decoration: none;
     transition: transform 0.3s ease, background 0.3s ease;
+    justify-content: space-between;
+}
+
+.proyecto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-top: auto;
 }
 
 .proyecto-card:hover {
