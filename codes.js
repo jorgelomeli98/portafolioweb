@@ -1,7 +1,6 @@
 export const codes = [
-
-/* Arbol */
-    `""" IMPORTANTE: Este codigo funciona parcialmente en esta web presionando 
+  /* Arbol */
+  `""" IMPORTANTE: Este codigo funciona parcialmente en esta web presionando 
 las veces que se desee para simular el prendido y apagado de luces, en el escritorio el codigo
 funcionaria de manera correcta sin los comentarios debido a las limitaciones de la consola web y la 
 funcion os.system('cls' o 'clear')"""
@@ -28,12 +27,10 @@ def arbol_navidad(filas):
     #time.sleep(1): Aqui le diriamos al codigo que espere 1 segundo para hacer la ilusion de prendido y apagado
     
 # Llamada a la función con 5 filas
-arbol_navidad(9)`
+arbol_navidad(9)`,
 
-/* Hola mundo*/
-,
-    
-`
+  /* Hola mundo*/
+  `
 def dibujar_hola_mundo():
 # Definir las letras de cada palabra
     letras_hola = {
@@ -60,11 +57,10 @@ def dibujar_hola_mundo():
         print(letras_mundo["M"][i] + "  " + letras_mundo["U"][i] + "  " + letras_mundo["N"][i] + "  " + letras_mundo["D"][i] + "  " + letras_mundo["O"][i])
 
 dibujar_hola_mundo()
-`
-,
-/* Calculadora de calorias*/
+`,
+  /* Calculadora de calorias*/
 
-`
+  `
 def calcular_get(peso, altura, edad, sexo, actividad, objetivo):
     """
     Calcula el Gasto Energético Total (GET) en función del peso, altura, edad, sexo, nivel de actividad y objetivo.
@@ -132,12 +128,10 @@ objetivo = "mantener"
 
 calorias = calcular_get(peso, altura, edad, sexo, actividad, objetivo)
 print(f"Las calorías necesarias para su objetivo son: {calorias}")
-`
-,
-/* CRUD Basico */
+`,
+  /* CRUD Basico */
 
-
-`
+  `
 import json
 import re
 
@@ -187,10 +181,9 @@ print(gestor.agregar_usuario(1, "Juan Torres", "juan@example.com"))  # Error ID 
 print(gestor.buscar_usuario(1))
 print(gestor.eliminar_usuario(3))  # Error: Usuario no encontrado
 print(gestor.listar_usuarios())
-`
-,
-/* Autentificación basica */
-`
+`,
+  /* Autentificación basica */
+  `
 import hashlib
 
 class SistemaAutenticacion:
@@ -227,10 +220,8 @@ print(auth.registrar_usuario("jorge", "otra_contraseña"))       # Error: usuari
 print(auth.iniciar_sesion("jorge", "mi_contraseña_segura"))     # Inicio de sesión exitoso
 print(auth.iniciar_sesion("jorge", "incorrecta"))               # Error: Contraseña incorrecta
 print(auth.iniciar_sesion("juan", "1234"))                      # Error: Usuario no encontrado
-`
-,
-
-`
+`,
+  `
 #El problema de los numeros duplicados
 """
 Tenemos una lista de numeros enteros donde cada numero aparece 2 veces exeptuando uno, la tarea del siguiente
@@ -252,5 +243,21 @@ def encontrar_unico(nums):
 nums = [4, 1, 2, 1, 2]
 resultado = encontrar_unico(nums)
 print(f"El número único es: {resultado}")
-`
+`,
+  `
+def numeros_primos(numeros):
+    def es_primo(n):
+        if n < 2:
+            return False
+        else:
+            for i in range(2, int(n ** 0.5) +1):
+                if n % i == 0:
+                    return False
+        
+        return True
+    
+    return [num for num in numeros if es_primo(num)]
+
+print(numeros_primos([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+`,
 ];
