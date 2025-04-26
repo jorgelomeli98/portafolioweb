@@ -189,9 +189,9 @@ h2 {
 
 .lenguaje-card,
 .tecnologia-card {
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 10px;
-  font-size: 0.5rem;
+  font-size: 0.9rem;
   width: 100px;
   text-align: center;
   transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
@@ -203,6 +203,10 @@ h2 {
 .tecnologia-card img{
     width: 100%;
 
+}
+
+#GAS{
+    font-size: 0.7rem;
 }
 
 
